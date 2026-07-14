@@ -1,5 +1,9 @@
 # hello-cli Specification
 
+## Purpose
+
+Provide a small hello world CLI used to demonstrate OpenSpec Shipper.
+
 ## Requirements
 
 ### Requirement: Default greeting
