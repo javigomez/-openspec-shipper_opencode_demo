@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "openspec:cli": "env OPENSPEC_TELEMETRY=0 DO_NOT_TRACK=1 openspec",
-    "openspec:validate-proposal": "node scripts/validate-openspec-proposal.mjs",
-    "lint:branch": "node scripts/validate-branch-name.mjs",
+    "openspec:validate-proposal": "node .openspec-shipper/scripts/validate-openspec-proposal.mjs",
+    "lint:branch": "node .openspec-shipper/scripts/validate-branch-name.mjs",
     "lint:commits": "commitlint --from origin/main --to HEAD",
     "start": "node src/hello.js",
     "test:types": "node --check src/hello.js && node --check tests/hello.test.js",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
     "@commitlint/config-conventional": "^21.0.2",
-    "@fission-ai/openspec": "^1.2.0"
+    "@fission-ai/openspec": "^1.2.0",
+    "openspec-shipper": "^0.1.26"
   }
 }
