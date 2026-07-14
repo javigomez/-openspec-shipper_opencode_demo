@@ -7,5 +7,5 @@ export function greeting(name, language) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  console.log(greeting(process.argv[2]));
+  console.log(greeting(process.argv[2], process.argv[3]));
 }
