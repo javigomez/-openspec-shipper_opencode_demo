@@ -1,5 +1,8 @@
-export function greeting(name) {
+export function greeting(name, language) {
   const trimmed = typeof name === "string" ? name.trim() : "";
+  if (language === "es") {
+    return trimmed ? `Hola, ${trimmed}!` : "Hola, mundo!";
+  }
   return trimmed ? `Hello, ${trimmed}!` : "Hello, world!";
 }
 
